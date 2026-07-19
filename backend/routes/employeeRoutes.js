@@ -65,20 +65,6 @@ const storage = multer.diskStorage({
 
 const upload = multer({
     storage,
-
-    limits: {
-        fileSize: 5 * 1024 * 1024,
-    },
-
-    fileFilter: (req, file, callback) => {
-        if (file.mimetype.startsWith("image/")) {
-            callback(null, true);
-        } else {
-            callback(
-                new Error("Le fichier sélectionné doit être une image.")
-            );
-        }
-    },
 });
 
 // ==========================
@@ -457,13 +443,16 @@ router.delete("/:id", authenticateAdmin, (req, res) => {
 
 router.use((error, req, res, next) => {
     if (error instanceof multer.MulterError) {
-        return res.status(400).json({
-            message:
-                error.code === "LIMIT_FILE_SIZE"
-                    ? "L’image ne doit pas dépasser 5 Mo."
-                    : "Erreur pendant l’envoi de l’image.",
-        });
-    }
+    console.log(error);
+    console.log(error.code);
+
+    return res.status(400).json({
+        message:
+            error.code === "LIMIT_FILE_SIZE"
+                ? "L’image ne doit pas dépasser 5 Mo."
+                : "Erreur pendant l’envoi de l’image.",
+    });
+}
 
     if (
         error.message ===

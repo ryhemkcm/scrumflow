@@ -85,7 +85,7 @@ const upload = multer({
 // Liste des employés
 // ==========================
 
-router.get("/", authenticateAdmin, (req, res) => {
+router.get("/", (req, res) => {
     try {
         const employees = db
             .prepare(`

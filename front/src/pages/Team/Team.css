@@ -1,0 +1,80 @@
+
+.TeamContainer {
+    height: 90vh;
+    width: 80vw;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    }
+
+.TeamGlass {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 2rem;
+    height: 90vh;
+    width: 100%;
+    padding: 4rem;
+    overflow: auto; 
+
+ /* Cacher les scrollbars tout en gardant le scroll fonctionnel */
+    scrollbar-width: none;           
+    -ms-overflow-style: none;       
+}
+
+.TeamGlass::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;        
+}
+
+
+.sidebar-green-bg {
+    background-color: #78A8D4  !important;
+    color: white !important;
+    &:hover {
+        background-color: #81B2D9   !important;
+    }
+}
+
+
+.role-developer {
+    background-color: #f35f4a !important;
+    color: white !important;
+}
+
+.role-tester {
+    background-color: #949b56 !important;
+    color: white !important;
+}
+
+.role-designer {
+    background-color: #b9c496 !important;
+    color: #333 !important;
+}
+
+.role-product-owner {
+    background-color: #ebece1 !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+.role-scrum-master {
+    background-color: #f35f4a !important;
+    color: white !important;
+    opacity: 0.8;
+}
+
+
+.edit-btn {
+    color: #949b56 !important;
+    border-color: #949b56 !important;
+    &:hover {
+        background-color: rgba(148, 155, 86, 0.1) !important;
+    }
+}
+
+.delete-btn {
+    color: #f35f4a !important;
+    border-color: #f35f4a !important;
+    &:hover {
+        background-color: rgba(243, 95, 74, 0.1) !important;
+    }
+}

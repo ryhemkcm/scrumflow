@@ -1,0 +1,21 @@
+.MainDash {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+/* Version tablette */
+@media (max-width: 1200px) {
+  .MainDash {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .MainDash {
+    padding: 0.5rem;
+    height: auto;
+  }
+}

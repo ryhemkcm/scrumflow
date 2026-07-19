@@ -1,0 +1,124 @@
+.home-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(47, 57, 35, 0.08);
+}
+
+.home-eyebrow {
+  margin-bottom: 8px;
+  color: #7c8757;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home-header h1 {
+  margin-bottom: 10px;
+  color: #3f4d55;
+  font-size: 2rem;
+}
+
+.home-header p {
+  max-width: 600px;
+  color: #71808a;
+  line-height: 1.6;
+}
+
+.security-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #edf3e5;
+  color: #62743d;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 230px;
+  padding: 28px;
+  border: none;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(47, 57, 35, 0.08);
+  text-align: left;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 36px rgba(47, 57, 35, 0.13);
+}
+
+.dashboard-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  background: #dfe9d5;
+  color: #617043;
+}
+
+.dashboard-card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 10px;
+  color: #3f4d55;
+  font-size: 1.35rem;
+}
+
+.dashboard-card p {
+  margin-bottom: 24px;
+  color: #7b8890;
+  line-height: 1.6;
+}
+
+.dashboard-card span {
+  margin-top: auto;
+  color: #d45d4c;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .home-header {
+    flex-direction: column;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}

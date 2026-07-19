@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f4f6f1;
+    color: #263238;
+}
+
+.app-layout {
+    min-height: 100vh;
+    background: #eef1e9;
+}
+
+.app-content {
+    min-height: 100vh;
+    margin-left: 235px;
+    padding: 42px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .app-content {
+        margin-left: 0;
+        padding: 80px 18px 24px;
+    }
+}

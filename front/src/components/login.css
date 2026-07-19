@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: #c1cfa1;
+}
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  
+}
+
+.login-container {
+  width: 100%;
+  max-width: 430px;
+  padding: 38px 32px;
+  border-radius: 28px;
+  background: #ede8dc;
+  box-shadow: 0 20px 45px rgba(44, 49, 24, 0.22);
+}
+
+.login-container .form-title {
+  margin-bottom: 30px;
+  color: #4f5734;
+  font-size: 1.55rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-error {
+  margin-bottom: 18px;
+  padding: 12px 14px;
+  border: 1px solid #e6a69b;
+  border-radius: 8px;
+  background: #fff0ed;
+  color: #b33a28;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.login-form .input-wrapper {
+  position: relative;
+  width: 100%;
+  height: 58px;
+  margin-bottom: 20px;
+}
+
+.login-form .input-wrapper .input-field {
+  width: 100%;
+  height: 100%;
+  padding: 0 52px 0 52px;
+  border: 1px solid #949d5e;
+  border-radius: 10px;
+  outline: none;
+  background: #fffdf8;
+  color: #48502c;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.login-form .input-wrapper .input-field::placeholder {
+  color: #909676;
+}
+
+.login-form .input-wrapper .input-field:focus {
+  border-color: #687231;
+  box-shadow: 0 0 0 3px rgba(104, 114, 49, 0.15);
+}
+
+.login-form .input-wrapper > i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+  color: #7e874d;
+  font-size: 1.35rem;
+  pointer-events: none;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #7e874d;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.toggle-password:hover {
+  background: rgba(148, 157, 94, 0.12);
+  color: #da5541;
+}
+
+.login-form .cnx-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 10px;
+  background: #df6551;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.login-form .cnx-button:hover:not(:disabled) {
+  background: #ce513e;
+  transform: translateY(-1px);
+}
+
+.login-form .cnx-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (max-width: 520px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-container {
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
+
+  .login-container .form-title {
+    font-size: 1.3rem;
+  }
+}

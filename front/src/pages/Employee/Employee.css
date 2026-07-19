@@ -1,0 +1,67 @@
+
+.EmployeeContainer {
+  height: 90vh;
+  width: 80vw;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: url('/path/to/your/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.EmployeeGlass {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem;
+  height: 90vh;
+  width: 100%;
+  padding: 2rem;
+      overflow: auto; 
+
+ /* Cacher les scrollbars tout en gardant le scroll fonctionnel */
+    scrollbar-width: none;           
+    -ms-overflow-style: none;       
+}
+
+.EmployeeGlass::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;        
+}
+.employee-table-scrollbar-transparent::-webkit-scrollbar {
+  width: 0px; /* Masque la largeur */
+  height: 0px; /* Masque la hauteur (pour le défilement horizontal) */
+  background: transparent; /* S'assure que le fond est transparent */
+}
+
+/* Section du header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.header h2 {
+  font-size: 2rem;
+  color:#5B7A92   ;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+
+
+
+/* Styles pour le formulaire dans la modale */
+.MuiDialogTitle-root {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.MuiDialogActions-root {
+  display: flex;
+  justify-content: space-between;
+}
